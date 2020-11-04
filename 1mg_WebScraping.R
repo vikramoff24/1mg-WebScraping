@@ -4,3 +4,6 @@
 #Description : This Script contains code for scrapping a particular webpage of 1mg.
 #-------------------------
 
+library(rvest)
+library(robotstxt)
+library(dplyr)

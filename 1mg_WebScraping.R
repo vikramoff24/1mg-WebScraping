@@ -25,3 +25,8 @@ NoOfRatings<-web%>%html_nodes(".CardRatingDetail__ratings-header___2yyQW")%>%htm
 
 #Dataset
 mg.products <-data.frame(Name,Quantity,Rating,NoOfRatings,MRP,Discount,SellingPrice)
+
+#Data Cleaning
+mg.products$MRP<-gsub("[???]","",mg.products$MRP)
+mg.products$Discount<-gsub("% off","",mg.products$Discount)
+mg.products$NoOfRatings<-gsub("ratings","",mg.products$NoOfRatings)

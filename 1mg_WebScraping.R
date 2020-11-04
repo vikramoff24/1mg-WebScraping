@@ -41,3 +41,8 @@ mg.products$SellingPrice<-as.numeric(mg.products$SellingPrice)
 #Changing the column name
 names(mg.products)<-c("Name","Quantity","Rating","No Of Ratings","MRP (???)","Discount (in %)","Selling_Price")
 
+#Viewing the dataset
+View(mg.products)
+
+#Structure Of Dataset
+str(mg.products)

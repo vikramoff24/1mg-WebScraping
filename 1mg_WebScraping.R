@@ -37,3 +37,7 @@ mg.products$NoOfRatings<-as.numeric(mg.products$NoOfRatings)
 mg.products$MRP<-as.numeric(as.character(mg.products$MRP))
 mg.products$Discount<-as.numeric(mg.products$Discount)
 mg.products$SellingPrice<-as.numeric(mg.products$SellingPrice)
+
+#Changing the column name
+names(mg.products)<-c("Name","Quantity","Rating","No Of Ratings","MRP (???)","Discount (in %)","Selling_Price")
+

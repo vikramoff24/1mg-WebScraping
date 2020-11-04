@@ -39,7 +39,7 @@ mg.products$Discount<-as.numeric(mg.products$Discount)
 mg.products$SellingPrice<-as.numeric(mg.products$SellingPrice)
 
 #Changing the column name
-names(mg.products)<-c("Name","Quantity","Rating","No Of Ratings","MRP (???)","Discount (in %)","Selling_Price")
+names(mg.products)<-c("Name","Quantity","Rating","No Of Ratings","MRP (???)","Discount (in %)","Selling Price")
 
 #Viewing the dataset
 View(mg.products)

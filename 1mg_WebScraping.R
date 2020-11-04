@@ -7,3 +7,5 @@
 library(rvest)
 library(robotstxt)
 library(dplyr)
+
+path<-paths_allowed("https://www.1mg.com/categories/fitness-supplements/vitamins-minerals-9?filter=true&sort=rating&discount=10")

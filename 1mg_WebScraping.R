@@ -30,3 +30,10 @@ mg.products <-data.frame(Name,Quantity,Rating,NoOfRatings,MRP,Discount,SellingPr
 mg.products$MRP<-gsub("[???]","",mg.products$MRP)
 mg.products$Discount<-gsub("% off","",mg.products$Discount)
 mg.products$NoOfRatings<-gsub("ratings","",mg.products$NoOfRatings)
+
+#Changing the datatype
+mg.products$Rating<-as.numeric(as.character(mg.products$Rating))
+mg.products$NoOfRatings<-as.numeric(mg.products$NoOfRatings)
+mg.products$MRP<-as.numeric(as.character(mg.products$MRP))
+mg.products$Discount<-as.numeric(mg.products$Discount)
+mg.products$SellingPrice<-as.numeric(mg.products$SellingPrice)
